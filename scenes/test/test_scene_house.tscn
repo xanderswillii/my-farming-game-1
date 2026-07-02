@@ -16,7 +16,8 @@ tile_map_data = PackedByteArray("AAAPABEAAQABAAEAAAAPABAAAQABAAEAAAAPAA8AAQABAAE
 tile_set = ExtResource("1_6qx8m")
 
 [node name="Houses" type="TileMapLayer" parent="GameTileMap" unique_id=233957983]
+tile_map_data = PackedByteArray("AAALAP7/BQAAAAAAAQAKAP7/BgAAAAAAAQA=")
 tile_set = ExtResource("1_6qx8m")
 
 [node name="Player" parent="." unique_id=1819435303 instance=ExtResource("2_8ykp8")]
-position = Vector2(255, 223)
+position = Vector2(234, 316)
