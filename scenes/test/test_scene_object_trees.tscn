@@ -16,7 +16,7 @@ tile_map_data = PackedByteArray("AAAPABEAAQABAAEAAAAPABAAAQABAAEAAAAPAA8AAQABAAE
 tile_set = ExtResource("1_cpn8j")
 
 [node name="Trees" type="TileMapLayer" parent="GameTileMap" unique_id=489554546]
-tile_map_data = PackedByteArray("AAAIAAsABgAAAAAABAAKAAkABgAAAAAABAAMAAoABgAAAAAABAAKAAwABgAAAAAABAA=")
+tile_map_data = PackedByteArray("AAAIAAsABgAAAAAABAAKAAkABgAAAAAABAAMAAoABgAAAAAABAAKAAwABgAAAAAABAANAA0ABgAAAAAABQAPAAsABgAAAAAABQA=")
 tile_set = ExtResource("1_cpn8j")
 
 [node name="Player" parent="." unique_id=1819435303 instance=ExtResource("2_x5hbo")]
