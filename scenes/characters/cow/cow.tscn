@@ -58,6 +58,7 @@ animations = [{
 radius = 7.0
 
 [node name="Cow" type="CharacterBody2D" unique_id=419690162]
+collision_layer = 64
 script = ExtResource("1_j7g5r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1363937620]
@@ -72,6 +73,7 @@ shape = SubResource("CircleShape2D_kc4rr")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=2124261534]
 navigation_layers = 2
+path_postprocessing = 1
 avoidance_enabled = true
 
 [node name="StateMachine" type="Node" parent="." unique_id=1811142216 node_paths=PackedStringArray("initial_node_state")]
