@@ -7,13 +7,14 @@
 radius = 3.6055512
 
 [node name="Stone" type="Sprite2D" unique_id=1578436701]
+y_sort_enabled = true
 texture = ExtResource("1_8wvwk")
 region_enabled = true
 region_rect = Rect2(114, 18, 10, 8)
 
-[node name="CollectibleComponent" parent="." unique_id=630459775 instance=ExtResource("2_oca81")]
+[node name="CollectableComponent" parent="." unique_id=630459775 instance=ExtResource("2_oca81")]
 collectible_name = "stone"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectibleComponent" unique_id=255570921]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=255570921]
 shape = SubResource("CircleShape2D_k7uky")
 debug_color = Color(0.22001323, 0.5972479, 0.32831398, 0.41960785)
