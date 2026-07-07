@@ -14,7 +14,7 @@ vframes = 2
 frame = 11
 
 [node name="CollectibleComponent" parent="." unique_id=630459775 instance=ExtResource("2_puqw6")]
-collectible_name = "tomato"
+collectable_name = "tomato"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectibleComponent" unique_id=1237930209]
 shape = SubResource("CircleShape2D_1tax0")

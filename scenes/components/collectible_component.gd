@@ -1,9 +1,10 @@
 class_name Collectible_component
 extends Area2D
 
-@export var collectible_name : String
+@export var collectable_name : String
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player: 
-		print("Collectted: ", collectible_name)
+		InventoryManager.add_collectable(collectable_name)
+		print("Collectted: ", collectable_name)
 		get_parent().queue_free()

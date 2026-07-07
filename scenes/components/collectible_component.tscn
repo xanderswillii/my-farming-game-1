@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xl7q33npsxk4" path="res://scenes/components/collectible_component.gd" id="1_i4nyu"]
 
-[node name="CollectibleComponent" type="Area2D" unique_id=630459775]
+[node name="CollectableComponent" type="Area2D" unique_id=630459775]
 collision_layer = 32
 collision_mask = 2
 script = ExtResource("1_i4nyu")

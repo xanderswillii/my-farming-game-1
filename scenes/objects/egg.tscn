@@ -11,6 +11,7 @@ y_sort_enabled = true
 texture = ExtResource("1_h452w")
 
 [node name="CollectibleComponent" parent="." unique_id=630459775 instance=ExtResource("2_twloa")]
+collectable_name = "egg"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectibleComponent" unique_id=1155479123]
 shape = SubResource("CircleShape2D_h452w")
