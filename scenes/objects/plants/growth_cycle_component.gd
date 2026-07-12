@@ -12,7 +12,6 @@ var starting_day: int
 var current_day: int
 
 func _ready() -> void:
-	print("GorwthCycleComponent ready! owner:", owner.name)
 	DayAndNightCycleManager.time_tick_day.connect(on_time_tick_day)
 	
 	

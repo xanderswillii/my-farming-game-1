@@ -1,7 +1,10 @@
 [gd_scene format=4 uid="uid://jxagytoxtir0"]
 
 [ext_resource type="TileSet" uid="uid://dew53j8pjlrxv" path="res://Tilesets/game_tile_set.tres" id="1_8ca5g"]
+[ext_resource type="PackedScene" uid="uid://be7e4blv0rqq" path="res://scenes/objects/plants/corn.tscn" id="2_5mdqj"]
 [ext_resource type="PackedScene" uid="uid://xwcxb2pvvhvu" path="res://scenes/characters/player/player.tscn" id="2_dviv7"]
+[ext_resource type="PackedScene" uid="uid://b5nrgj3lcqcqo" path="res://scenes/objects/plants/tomato.tscn" id="3_vkqnv"]
+[ext_resource type="PackedScene" uid="uid://cba8h5345s0c3" path="res://scenes/ui/game_screen.tscn" id="5_vkqnv"]
 
 [node name="TestSceneTilemapLayerYSort" type="Node2D" unique_id=1863165224]
 y_sort_enabled = true
@@ -31,7 +34,24 @@ y_sort_enabled = true
 tile_map_data = PackedByteArray("AAAQAA8ABAADAAAAAAATAA8ABAAIAAIAAAAVABAABAAFAAMAAAAXABAABAAFAAAAAAAZABAABAAGAAAAAAAQABIABAADAAIAAAATABIABAAEAAIAAAAVABIABAAFAAIAAAAXABIABAAIAAAAAAAZABIABAAFAAAAAAAQABQABAAGAAAAAAA=")
 tile_set = ExtResource("1_8ca5g")
 
+[node name="Crops" type="Node2D" parent="." unique_id=1463034453]
+y_sort_enabled = true
+
+[node name="Corn" parent="Crops" unique_id=789065456 instance=ExtResource("2_5mdqj")]
+position = Vector2(146, 242)
+
+[node name="Corn2" parent="Crops" unique_id=1828551652 instance=ExtResource("2_5mdqj")]
+position = Vector2(148, 267)
+
+[node name="Tomato" parent="Crops" unique_id=1690948349 instance=ExtResource("3_vkqnv")]
+position = Vector2(171, 241)
+
+[node name="Tomato2" parent="Crops" unique_id=940302108 instance=ExtResource("3_vkqnv")]
+position = Vector2(174, 268)
+
 [node name="Player" parent="." unique_id=1819435303 instance=ExtResource("2_dviv7")]
-position = Vector2(200, 262)
+position = Vector2(210, 251)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1440990040]
+
+[node name="GameScreen" parent="." unique_id=917700627 instance=ExtResource("5_vkqnv")]
