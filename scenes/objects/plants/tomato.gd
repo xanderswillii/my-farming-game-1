@@ -43,3 +43,4 @@ func on_crop_harvesting() -> void:
 	var tomato_harvest_instance = tomato_harvest_scene.instantiate() as Node2D
 	tomato_harvest_instance.global_position = global_position
 	get_parent().add_child(tomato_harvest_instance)
+	queue_free()
