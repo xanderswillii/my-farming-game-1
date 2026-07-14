@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b4e7tt7878sgx"]
+
+[ext_resource type="Script" uid="uid://ce53td5mq85h1" path="res://scenes/components/save_data_component.gd" id="1_nm1vf"]
+[ext_resource type="Resource" uid="uid://bi12kc0hcyd2c" path="res://resources/tilemap_layer_data_resource.tres" id="2_laewb"]
+
+[node name="SaveDataComponent" type="Node" unique_id=336041725]
+script = ExtResource("1_nm1vf")
+save_data_resource = ExtResource("2_laewb")
