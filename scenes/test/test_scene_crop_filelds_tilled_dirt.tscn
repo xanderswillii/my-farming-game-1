@@ -13,16 +13,19 @@
 [ext_resource type="Script" uid="uid://cu7x63ekkbpn0" path="res://scenes/components/save_level_data_component.gd" id="10_mfhkx"]
 [ext_resource type="PackedScene" uid="uid://db2hofagiemv2" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="11_vp8k8"]
 [ext_resource type="PackedScene" uid="uid://be7e4blv0rqq" path="res://scenes/objects/plants/corn.tscn" id="12_iym6k"]
+[ext_resource type="PackedScene" uid="uid://cdjjum2c3tpp7" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="14_5fpp8"]
 
 [node name="TestSceneCropsTilledDirt" type="Node2D" unique_id=1863165224]
 
-[node name="DayNightCycleComponent" parent="." unique_id=1278002894 instance=ExtResource("1_q6rri")]
-visible = false
-
 [node name="TestSceneSaveDataManagerComponent" parent="." unique_id=945407357 instance=ExtResource("11_vp8k8")]
+
+[node name="TestSceneEnableToolButtonsComponent" parent="." unique_id=1092542955 instance=ExtResource("14_5fpp8")]
 
 [node name="SaveLevelDataComponent" parent="." unique_id=577329207 instance=ExtResource("9_7eqmc")]
 script = ExtResource("10_mfhkx")
+
+[node name="DayNightCycleComponent" parent="." unique_id=1278002894 instance=ExtResource("1_q6rri")]
+visible = false
 
 [node name="GameTileMap" type="Node2D" parent="." unique_id=188451966]
 
