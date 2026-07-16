@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://csntata4ed65" path="res://scenes/components/interactable_label_component.tscn" id="3_8pawo"]
 [ext_resource type="PackedScene" uid="uid://c53thebvkicud" path="res://scenes/components/feed_component.tscn" id="4_rqprm"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_umtkn"]
+size = Vector2(15, 12)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_vmxm4"]
 atlas = ExtResource("1_yv7tv")
 region = Rect2(192, 0, 48, 48)
@@ -106,8 +109,12 @@ radius = 20.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rqprm"]
 
-[node name="Chest" type="Node2D" unique_id=1258230829]
+[node name="Chest" type="StaticBody2D" unique_id=954453698]
 script = ExtResource("1_umtkn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1918669713]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_umtkn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1406198263]
 sprite_frames = SubResource("SpriteFrames_hmcsr")
@@ -117,6 +124,7 @@ autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent" unique_id=344598825]
 shape = SubResource("CircleShape2D_1ouyk")
+debug_color = Color(0.69252837, 0.27237567, 0.57072204, 0.41960785)
 
 [node name="InteractableLabelComponent" parent="." unique_id=1822402389 instance=ExtResource("3_8pawo")]
 offset_left = -26.0
