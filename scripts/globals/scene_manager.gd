@@ -1,6 +1,7 @@
 extends Node
 
 var main_scene_path: String = "res://scenes/main_scene.tscn"
+var main_scene_root_path: String = "/root/MainScene"
 var main_scene_level_root_path: String = "/root/MainScene/GameRoot/LevelRoot"
 
 var level_scenes: Dictionary = {
@@ -8,6 +9,9 @@ var level_scenes: Dictionary = {
 }
 
 func load_main_scene_container() -> void:
+	if get_tree().root.has_node("/root/MainScene"):
+		return
+		
 	var node: Node = load(main_scene_path).instantiate()
 	
 	if node != null:
@@ -30,5 +34,6 @@ func load_level(level: String) -> void:
 			for node: Node in nodes:
 				node.queue_free()
 				
-		level_root.add_child(level_scene)
+				await get_tree().process_frame
+				level_root.add_child(level_scene)
 		

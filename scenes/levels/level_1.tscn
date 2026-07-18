@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://detu3dog1plcw"]
 
+[ext_resource type="PackedScene" uid="uid://drwopbjl8codt" path="res://scenes/components/save_level_data_component.tscn" id="1_iwr0g"]
 [ext_resource type="TileSet" uid="uid://dew53j8pjlrxv" path="res://Tilesets/game_tile_set.tres" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://cv53m6ww2gov5" path="res://scenes/houses/medium_house.tscn" id="2_6iamk"]
 [ext_resource type="PackedScene" uid="uid://b4e7tt7878sgx" path="res://scenes/components/save_data_component.tscn" id="2_iav0o"]
@@ -36,6 +37,8 @@ source_geometry_mode = 2
 
 [node name="Level1" type="Node2D" unique_id=1965320764]
 y_sort_enabled = true
+
+[node name="SaveLevelDataComponent" parent="." unique_id=577329207 instance=ExtResource("1_iwr0g")]
 
 [node name="GameTileMap" type="Node2D" parent="." unique_id=798107520]
 y_sort_enabled = true
