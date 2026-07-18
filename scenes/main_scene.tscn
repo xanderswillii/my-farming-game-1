@@ -8,7 +8,6 @@
 [node name="MainScene" type="Node" unique_id=1038473979]
 
 [node name="DayNightCycleComponent" parent="." unique_id=1278002894 instance=ExtResource("2_pw63i")]
-visible = false
 
 [node name="GameRoot" type="Node2D" parent="." unique_id=949316440]
 y_sort_enabled = true
@@ -19,7 +18,7 @@ y_sort_enabled = true
 [node name="Level1" parent="GameRoot/LevelRoot" unique_id=1965320764 instance=ExtResource("1_7ykc4")]
 
 [node name="Player" parent="GameRoot" unique_id=1819435303 instance=ExtResource("3_pu3yx")]
-position = Vector2(336, 242)
+position = Vector2(317, 241)
 
 [node name="Camera2D" type="Camera2D" parent="GameRoot/Player" unique_id=1038907302]
 
