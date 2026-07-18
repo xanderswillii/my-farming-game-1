@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="my farming game 1"
-run/main_scene="uid://ciqvqq55h3kp1"
+run/main_scene="uid://demb86d7xx42j"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,6 +23,8 @@ DayAndNightCycleManager="*uid://b51j2mvo6ps24"
 SaveGameManager="*uid://c6eimj33laors"
 DialogueManager="*uid://c3rodes2l3gxb"
 GameDialogueManager="*uid://dpydxtfpnv24h"
+GameManager="*uid://drvqg40a3x4l3"
+SceneManager="*uid://colokbxcht5q3"
 
 [display]
 
