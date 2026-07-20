@@ -15,9 +15,9 @@ func _save_data() -> Resource:
 		
 	if save_data_resource == null:
 		push_error("save_data_resource:", save_data_resource, parent_node.name)
-		return
+		return null
 	
-	
+
 	save_data_resource._save_data(parent_node)
 		
 	return save_data_resource
