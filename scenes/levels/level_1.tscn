@@ -16,6 +16,7 @@
 [ext_resource type="Script" uid="uid://d27qwc5l66b1t" path="res://scenes/components/crops_cursor_component.gd" id="12_iwr0g"]
 [ext_resource type="PackedScene" uid="uid://dhjmtolnxdbnv" path="res://scenes/objects/milk.tscn" id="14_wtwp4"]
 [ext_resource type="PackedScene" uid="uid://c6fioam5f3ym" path="res://scenes/objects/egg.tscn" id="15_iwr0g"]
+[ext_resource type="PackedScene" uid="uid://dtiab4yvdhtws" path="res://audio/music/on_the_farm_music.tscn" id="17_bahl2"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_sk5k4"]
 vertices = PackedVector2Array(353, 283, 283, 283, 283, 138.65625, 304, 139.32031, 353, 267, 304, 138.82031, 320, 139.32031, 320, 138.82031, 336, 139.32031, 348, 143, 352.6797, 251, 353.1797, 267, 336, 138.82031, 348, 139.1875, 353, 143, 353, 207, 372, 251, 372, 207)
@@ -37,6 +38,9 @@ source_geometry_mode = 2
 
 [node name="Level1" type="Node2D" unique_id=1965320764]
 y_sort_enabled = true
+
+[node name="OnTheFarmMusic" parent="." unique_id=931186876 instance=ExtResource("17_bahl2")]
+autoplay = true
 
 [node name="SaveLevelDataComponent" parent="." unique_id=577329207 instance=ExtResource("1_iwr0g")]
 
