@@ -19,5 +19,5 @@ func exit_game() -> void:
 
 
 func show_game_menu_screen() -> void:
-	var game_menu_sccreen_instance = game_menu_screen.instantiate()
-	get_tree().root.add_child(game_menu_sccreen_instance)
+	var game_menu_screen_instance = game_menu_screen.instantiate()
+	get_tree().root.add_child(game_menu_screen_instance)

@@ -8,7 +8,9 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func save_game() -> void:
+	print("SaveGameManager.save_game called!")
 	var save_level_data_component: SaveLevelDataComponent = get_tree().get_first_node_in_group("save_level_data_component")
+	print("save _level_data_component:", save_level_data_component)
 	
 	if save_level_data_component != null:
 		save_level_data_component.save_game()

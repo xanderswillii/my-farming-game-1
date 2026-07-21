@@ -15,7 +15,7 @@ func _ready() -> void:
 		if child is NodeState:
 			node_states[child.name.to_lower()] = child
 			child.transition.connect(transition_to)
-	print("Registered states: ", node_states.keys())
+
 	if initial_node_state:
 		initial_node_state._on_enter()
 		current_node_state = initial_node_state

@@ -9,7 +9,7 @@ var level_scenes: Dictionary = {
 }
 
 func load_main_scene_container() -> void:
-	if get_tree().root.has_node("/root/MainScene"):
+	if get_tree().root.has_node( main_scene_root_path):
 		return
 		
 	var node: Node = load(main_scene_path).instantiate()
@@ -34,6 +34,6 @@ func load_level(level: String) -> void:
 			for node: Node in nodes:
 				node.queue_free()
 				
-				await get_tree().process_frame
-				level_root.add_child(level_scene)
+			await get_tree().process_frame
+			level_root.add_child(level_scene)
 		

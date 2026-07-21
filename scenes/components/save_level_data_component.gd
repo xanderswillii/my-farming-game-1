@@ -30,6 +30,8 @@ func save_game() -> void:
 		DirAccess.make_dir_absolute(save_game_data_path)
 		
 	var level_save_file_name: String = save_file_name % level_scene_name
+	print("file name:", level_save_file_name)
+	print("level_scene_name:", level_scene_name)
 	
 	save_node_data()
 	

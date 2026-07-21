@@ -12,6 +12,8 @@ func _on_start_game_button_pressed() -> void:
 
 
 func _on_save_game_button_pressed() -> void:
+	print("save button pressed!")
+	print("allow_save_game:", SaveGameManager.allow_save_game)
 	SaveGameManager.save_game()
 
 
